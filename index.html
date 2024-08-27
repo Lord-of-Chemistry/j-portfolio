@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <title>Josiah</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">Akpaetuk <span>Josiah</span></a>
+      <i class="bx bx-menu" id="menu-icon" onclick="show()"></i>
+      <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Josiah</span></h1>
+        <h3>I'm a <span>Frontend Developer</span></h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, quo
+          sed quia illo ad possimus inventore excepturi. Repudiandae ex dolor
+          laudantium accusamus quisquam cum nesciunt, iusto incidunt ullam alias
+          aliquid.
+        </p>
+
+        <div class="social-icons">
+          <a href="#">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="#">
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#" class="btn">Hire</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="Josiah_pfp.jpg" alt="Me" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="Josiah_pfp.jpg" alt="Me" />
+      </div>
+      <div class="about-content">
+        <h2>About <span>Me</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          amet adipisci odio iste inventore, voluptate esse, reprehenderit quia
+          nostrum quam illo eius error laborum quas vero. Aliquid necessitatibus
+          perferendis pariatur! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quos fugit dignissimos dolorem perferendis dolorum
+          atque quidem illo quis nisi, nesciunt soluta aut totam dicta officiis
+          quo distinctio sit delectus numquam.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+      <div class="services-container">
+        <div class="service-box">
+          <div class="services-info">
+            <i class="bx bxs-devices"></i>
+            <h4>Mobile App Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nam
+              dolorum delectus deserunt vitae laborum est voluptatum, error
+              architecto inventore nisi rem, accusamus et porro placeat nemo
+              eveniet suscipit doloribus.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="services-info">
+            <i class="bx bx-code"></i>
+            <h4>Frontend Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nam
+              dolorum delectus deserunt vitae laborum est voluptatum, error
+              architecto inventore nisi rem, accusamus et porro placeat nemo
+              eveniet suscipit doloribus.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="services-info">
+            <i class="bx bx-code-curly"></i>
+            <h4>Backend Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nam
+              dolorum delectus deserunt vitae laborum est voluptatum, error
+              architecto inventore nisi rem, accusamus et porro placeat nemo
+              eveniet suscipit doloribus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Phone Number" />
+            <input type="text" placeholder="Subject" />
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea cols="30" rows="10" placeholder="Your message"></textarea>
+          <input type="submit" value="Send Message" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="#">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-instagram-alt"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-twitter"></i>
+        </a>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <p class="copyright">
+        Copyright © 2024 Akpaetuk Josiah | All Rights Reserved
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
