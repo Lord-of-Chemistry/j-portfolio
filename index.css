@@ -39,6 +39,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: 0.3s;
 }
 
 #menu-icon {
@@ -92,8 +93,8 @@ section {
 .home-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .home-content h1 {
@@ -124,6 +125,13 @@ section {
 .home-img img:hover {
   box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
     0 0 100px var(--main-color);
+}
+
+.typedText {
+  color: var(--main-color);
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .social-icons a {
@@ -191,11 +199,16 @@ section {
   background-color: var(--second-bg-color);
 }
 
+.about-flex {
+  flex-direction: column;
+}
+
 .about-img img {
-  width: 32vw;
+  width: 20vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
+  margin-bottom: 3rem;
 }
 
 .about-img img:hover {
@@ -214,6 +227,101 @@ section {
 
 .about-content .btn {
   margin: 3rem 0;
+}
+
+.skill {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background: transparent;
+  box-shadow: 0 0 25px var(--main-color);
+  padding: 10px 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+}
+
+.skill .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.skill-box .skill-bar {
+  height: 1rem;
+  width: 100%;
+  min-width: 200px;
+  border-radius: 6px;
+  margin-top: 1.2rem;
+  background: rgba(247, 247, 247, 0.3);
+}
+
+.skill-box .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: var(--main-color);
+  animation: progress 0.4s ease-in-out forwards;
+}
+
+.skill-per.html {
+  animation-delay: 0.1s;
+  width: 85%;
+}
+
+.skill-per.css {
+  animation-delay: 0.1s;
+  width: 80%;
+}
+
+.skill-per.tailwind-css {
+  animation-delay: 0.1s;
+  width: 90%;
+}
+.skill-per.javaScript {
+  animation-delay: 0.1s;
+  width: 75%;
+}
+
+.skill-per.python {
+  animation-delay: 0.1s;
+  width: 40%;
+}
+
+.skill-per.php {
+  animation-delay: 0.1s;
+  width: 30%;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--second-bg-color);
+  padding: 2px 6px;
+  border-radius: 20px;
+  background: var(--main-color);
+  z-index: 1;
 }
 
 ::-webkit-scrollbar {
@@ -294,8 +402,85 @@ section {
   line-height: 1.7;
 }
 
-.contact {
+.projects {
   background-color: var(--second-bg-color);
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  height: 200px;
+  border-radius: 3rem;
+  cursor: pointer;
+  border: 5px solid transparent;
+  transition: 0.4s ease-in-out;
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.projects h2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  font-weight: 800;
+}
+
+.project-box h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project-box:hover {
+  background: var(--second-bg-color);
+  color: var(--main-color);
+  border: 5px solid var(--main-color);
+  transform: scale(1.03);
+}
+
+.project-box > i {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2.5rem;
+  margin: 30px;
+}
+
+.card {
+  display: flex;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  background: black;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid var(--main-color);
+}
+
+.contact {
+  background-color: var(--bg-color);
 }
 
 .contact h2 {
@@ -326,7 +511,7 @@ section {
 }
 
 .footer {
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
   padding: 50px 0;
 }
 
@@ -405,7 +590,7 @@ section {
   }
 
   .about {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
   }
 
