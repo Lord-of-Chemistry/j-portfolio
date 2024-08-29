@@ -9,3 +9,23 @@ menuIcon.onclick = () => {
         navbar.style.display = "block";
     }
 };
+
+var typingEffect = new Typed(".typedText", {
+    strings: ["Designer", "Coder", "Developer", "Mentor"],
+
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 2000,
+})
+
+ScrollReveal({ reset: true,
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+ });
+
+ScrollReveal().reveal(".text-info", { delay: 500, origin: 'left'})
+ScrollReveal().reveal(".home-img", { delay: 600, origin: 'bottom'})
+ScrollReveal().reveal("social-icons", { delay: 900, origin: 'bottom'})
+ScrollReveal().reveal(".text-info", { delay: 500, origin: 'left'})
