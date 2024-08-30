@@ -41,7 +41,7 @@ body {
 .header {
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 10;
   left: 0;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
@@ -737,13 +737,6 @@ section {
 
   .skill h2 {
     font-size: 4rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .header, .menu {
-    width: 100%;
-    /* Other mobile-specific styles */
   }
 }
 
