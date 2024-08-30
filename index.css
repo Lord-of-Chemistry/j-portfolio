@@ -740,6 +740,13 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  .header, .menu {
+    width: 100%;
+    /* Other mobile-specific styles */
+  }
+}
+
 @media (max-width: 765px) {
   .logo {
     font-size: 3rem;
