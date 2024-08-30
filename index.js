@@ -20,7 +20,7 @@ var typingEffect = new Typed(".typedText", {
 })
 
 ScrollReveal({ reset: true,
-    distance: '300px',
+    distance: '100px',
     duration: 2300,
     delay: 400
  });
