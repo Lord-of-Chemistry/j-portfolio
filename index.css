@@ -42,7 +42,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 2rem 10%;
+  padding: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
@@ -53,6 +53,7 @@ body {
 }
 
 #menu-icon {
+  margin-right: 21.75rem;
   font-size: 3.6rem;
   color: var(--main-color);
   display: none;
