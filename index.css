@@ -50,6 +50,7 @@ body {
   align-items: center;
   z-index: 100;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 #menu-icon {
